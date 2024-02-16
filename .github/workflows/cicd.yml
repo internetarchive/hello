@@ -1,8 +1,6 @@
 on: push
 jobs:
   cicd:
-    # https://github.com/internetarchive/cicd
     uses: internetarchive/cicd/.github/workflows/cicd.yml@main
     secrets:
       NOMAD_TOKEN: ${{ secrets.NOMAD_TOKEN }}
-      REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
