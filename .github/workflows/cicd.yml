@@ -1,8 +1,5 @@
-name: CICD
 on: push
-
 jobs:
-  # permissions: { contents: read, packages: write, id-token: write }
   cicd:
     # https://github.com/internetarchive/cicd
     uses: internetarchive/cicd/.github/workflows/cicd.yml@main
